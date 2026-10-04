@@ -4,6 +4,7 @@ Org-wide defaults that every FuelRoi repository uses automatically.
 
 **This repository is public by design.** GitHub only applies these defaults from a public `.github` repo.
 Never put secrets, internal notes, or SOPs here. Those live in the private `handbook` repo.
+CI is not here either: it's enforced org-wide from the private `workflows` repo.
 
 ## What's here
 
@@ -15,7 +16,6 @@ Never put secrets, internal notes, or SOPs here. Those live in the private `hand
 | `ISSUE_TEMPLATE/bug.yml` | Bug issue form. Sets type Bug, adds to the Work board |
 | `ISSUE_TEMPLATE/config.yml` | Turns off blank issues; links to the SOP and Work board |
 | `pull_request_template.md` | Default PR description with `Fixes #` and the pre-merge checklist |
-| `workflow-templates/go-ci.yml` | Go CI, offered under each repo's **Actions → New workflow** |
 
 ## Rules
 - A repo with its **own** `.github/ISSUE_TEMPLATE` folder ignores these templates entirely. Only add one if a repo truly needs different templates.
