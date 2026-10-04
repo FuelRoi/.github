@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How we work (Engineering SOP)
+    url: https://github.com/FuelRoi/handbook/blob/main/SOP.md
+    about: Not sure which template to pick? Feature, Slice, Task, and Bug are explained here.
+  - name: Work board
+    url: https://github.com/orgs/FuelRoi/projects/1
+    about: Quick idea? Add a draft straight to Backlog on the board instead.

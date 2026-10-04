@@ -1,0 +1,45 @@
+name: Bug
+description: Something that's broken
+type: Bug
+projects: ["FuelRoi/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After creating it: set **Area** and **Priority**. Use **Urgent** only if it's blocking customers or the team right now.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Production
+        - Staging
+        - Local / development
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or errors
+      description: Paste log lines or a Sentry link. Never paste passwords, keys, or customer data.
+      render: shell

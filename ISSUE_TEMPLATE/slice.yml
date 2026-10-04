@@ -1,0 +1,33 @@
+name: Slice
+description: One end-to-end piece of a feature
+type: Slice
+projects: ["FuelRoi/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A **Slice** gives someone something new to see or use, built end to end: migration → queries → handler → template.
+        After creating it: set **Area**, **Priority**, and **Effort**, and add it as a sub-issue of its **Feature**.
+  - type: input
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence. Who gets what, and why.
+      placeholder: I can add a URL to watch, edit it, and pause it without deleting history.
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: A checklist. Each item should be something you can see working.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Tables, routes, and screens involved. Link to docs/DESIGN.md sections.
