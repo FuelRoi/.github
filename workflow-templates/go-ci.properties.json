@@ -1,6 +1,0 @@
-{
-  "name": "FuelRoi Go CI",
-  "description": "Checks that go.mod is tidy, then runs go vet, go test, and go build on every push and pull request.",
-  "categories": ["Go"],
-  "filePatterns": ["go.mod$"]
-}
